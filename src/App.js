@@ -5,10 +5,10 @@ import "./App.css";
 class App extends Component {
   render() {
     const widthStyle = {
-      width: "800px"
+      width: "1500px"
     };
     return (
-      <div style={widthStyle}>
+      <div style={widthStyle} >
         <div className="App">
           <br />
           <Map className="map" />
