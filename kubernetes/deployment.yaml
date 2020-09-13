@@ -21,6 +21,8 @@ spec:
         app: minesweeper
     spec:
       containers:
-      - image: snaruto7/minesweeper:v1
+      - image: #{REGISTRY_URL}#/#{IMAGE_NAME}#:#{BUILD_ID}#
         imagePullPolicy: IfNotPresent
         name: minesweeper
+      imagePullSecrets:
+      - name: docker-secret
